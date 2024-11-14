@@ -4,13 +4,13 @@ const Home = () => {
   // Get current time in user's timezone
   const now = new Date();
 
-  const time = now.toLocaleTimeString('en-US', {
+  const time = now.toLocaleTimeString('en-IN', {
     hour: '2-digit',
     minute: '2-digit',
     timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone,
   });
 
-  const date = new Intl.DateTimeFormat('en-US', {
+  const date = new Intl.DateTimeFormat('en-IN', {
     dateStyle: 'full',
     timeZone: Intl.DateTimeFormat().resolvedOptions().timeZone,
   }).format(now);
